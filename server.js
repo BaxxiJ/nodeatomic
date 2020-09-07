@@ -29,7 +29,7 @@ app.get('/containerip', function (req,res)
 {
   var containerip = ippackage.address();
 
-  res.write( containerip );
+  res.write("container ip -> " + containerip );
   res.end();
 });
 
